@@ -1,0 +1,29 @@
+h2{
+    background-color: lightblue;}
+
+#ro{
+    background-color: rgb(150, 18, 37);
+}
+.mi{
+    background-color: rgb(75, 18, 150);
+}
+div p{
+    background-color: rgb(150, 18, 150);
+}
+p>b{
+    background-color: rgb(48, 48, 4);
+}
+div+h5{
+    background-color: rgb(48, 48, 4);
+}
+div~h5{
+    background-color: rgb(48, 48, 4);
+} 
+.box{
+    width: 200px;
+    height: 200px;
+    border: 1px solid black;
+}
+.box:hover{
+    background-color: yellow;
+}
