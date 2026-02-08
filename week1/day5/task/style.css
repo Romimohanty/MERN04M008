@@ -1,0 +1,21 @@
+table{
+    
+    width: 300px;
+}
+th {
+      text-align: left;
+      font-weight: bold;
+    }
+    
+    #row2{
+        background-color: rgb(0, 0, 0);
+            color: white;
+    }
+    #row3{
+        background-color: black;
+        color: white;
+    }
+    #row1{
+        background-color: black;
+        color: white;
+    }
