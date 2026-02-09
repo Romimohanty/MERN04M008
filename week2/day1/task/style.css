@@ -1,0 +1,48 @@
+.container{
+    display: flex;
+    
+    
+}
+.do{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(232, 232, 238); 
+    padding:15px 20px 10px 20px;
+    background-color: rgb(232, 232, 238);
+    
+
+}
+.dont{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(232, 232, 238); 
+    margin-left: 20px;
+    padding: 15px 20px 10px 20px;
+    background-color: rgb(232, 232, 238);
+
+}
+input {
+  margin-bottom: 15px;
+}
+label{
+    color: rgb(6, 6, 158);
+}
+.div1{
+    height: 500px;
+    width: 400px;
+    border: 30px solid black;
+    margin-top: 50px 40px 50px 60px;
+}
+.div2{
+    height: 450px;
+    width: 340px;
+    border: 30px solid rgb(241, 240, 240);
+    
+}
+.div3{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMF8--0FLw7j4yOQERvQDzZC7tbvXbohrEeA&s);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 450px;
+    width: 340px;
+}
