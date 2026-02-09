@@ -1,0 +1,60 @@
+.box{
+    width: 200px;
+    height: 200px;
+    border: 2px solid blue;
+}
+.box:hover{
+    background-color: lightblue;
+} 
+.box:active{
+    background-color: lightgreen;
+}
+input:focus{
+    background-color: lightyellow;
+}
+ul li:first-child{
+    color: red;
+}
+ul li:last-child{
+    color: green;
+}
+ul li:nth-child(4){
+    color: blue;
+}
+a:visited{
+    color: red;
+}
+p[class]{
+    background-color: lightgreen;
+}
+p[class=para1]{
+    background-color: lightgrey;
+}
+.container{
+    /* height: 200px; */
+    width: 200px;
+    border: 2px dotted black;
+    /* padding-top: 20px;
+    padding-right: 30px;
+    padding-bottom: 40px;
+    padding-left: 10px; */
+     padding: 20px 30px 40px 10px; 
+     margin: 30px 40px 50px 60px;
+}
+/* .container p::first-line{
+    color: red;
+}
+.container p::first-letter{
+    color: rgb(255, 149, 0);
+}
+.container p::after{
+    content: "qlith";
+    color: rgb(225, 0, 255);
+}
+.container p::before{
+    content: "qlith";
+    color: rgb(0, 255, 0);
+}
+.container p::selection{
+    background-color: rgb(18, 150, 27);
+} */
