@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.container{
+    height: 300px;
+    width: 600px;
+    border: 2px solid black;
+    display: flex;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    /* justify-content: center; */
+    align-content: start;
+    /* justify-items: end; */
+
+}
+.box{
+    border: 1px solid red;
+    height: 50px;
+    /* width: 50px; */
+    
+}
+/* .item1{
+    flex-grow: 1;
+}
+.item2{
+    flex-shrink: 1;
+} */
+ .container-grid{
+    height: 400px;
+    width: 400px;
+    border: 2px solid black;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:2px;
+    
+ }
+  .grid-box{
+    border: 1px solid red;
+    /* height: 50px;
+    width: 50px; */
+ } 
+ .item1{
+    grid-column-start: 1;
+    grid-column-end: 4;
+    /* background-color: lightcoral; */
+    background-image: url(https://t3.ftcdn.net/jpg/08/27/09/20/360_F_827092074_tUV40nTZFcjGT69jkS2EJErmYQ9HaDK6.jpg);
+     background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+    
+ }
+    .item2{
+        grid-row-start: 2;
+        grid-row-end: 4;
+         /* background-color: lightblue; */
+       background-image: url(https://www.nsbpictures.com/wp-content/uploads/2020/02/Valentines-day-hd-backgrounds-5.jpg);
+       background-size: cover;
+     background-position: center;
+     background-repeat: no-repeat;
+    }
+    .item3{
+        grid-column-start: 2;
+        grid-column-end: 4;
+        background-color: lightgreen;
+    }
+    
