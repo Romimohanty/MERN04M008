@@ -8,6 +8,7 @@ body {
 .card {
   width: 280px;
   background: #fff;
+  border-radius: 10px;
 }
 
 .card-image {
@@ -16,6 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  border-radius: 10px;
 }
 
 .image-icon {
@@ -23,7 +25,9 @@ body {
 }
 
 .card-content {
-  padding: 16px;}
+  padding: 16px;
+  ;
+}
 
 .label {
   display: inline-block;
