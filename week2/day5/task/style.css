@@ -1,0 +1,58 @@
+.grid{
+    /* margin: 50px; */
+    border: 2px solid aqua;
+    width: 200px;
+    height: 300px;
+    display: grid;
+    border: none;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3,1fr);
+    padding-left: 200px;
+
+    grid-template-areas: 
+    "header1 header2 header3 header4"
+    "slidebar content1 content1 slidebar2"
+    "slidebar header5 header6 slidebar2";
+}
+.box{
+    text-align: left;
+    color: white;
+    padding: 50px;
+    border: 2px solid aqua;
+}
+.item1{
+    background-color:rgba(0, 0, 0, 0.704) ;
+    grid-area: header1;
+}
+.item2{
+    background-color:rgb(44, 176, 228);
+    grid-area: header2;
+}
+.item3{
+    background-color: rgb(135, 219, 135);
+    grid-area: header3;
+}
+.item4{
+    background-color: rgba(220, 22, 144, 0.704);
+    grid-area: header4;
+}
+.item5{
+    background-color: #1c438dcb ;
+    grid-area: slidebar;
+}
+.item6{
+    background-color: rgba(0, 0, 0, 0.704);
+    grid-area: content1;
+}
+.item7{
+    background-color: #1c438dcb;
+    grid-area: slidebar2;
+}
+.item8{
+    background-color:aqua;
+    grid-area: header5;
+}
+.item9{
+    grid-area: header6;
+    background-color:#0b999ecb ;
+}
