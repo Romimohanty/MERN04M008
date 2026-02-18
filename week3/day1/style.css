@@ -1,0 +1,72 @@
+*{
+margin: 0;
+padding: 0;
+box-sizing: border-box;
+
+}
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: blueviolet;
+    /* margin: auto; */
+    border: 1px solid black;
+    /* transition: all 2s; */
+    /* transition-property: all;
+    transition-duration: 2s;
+    transition-timing-function: ease-in-out; */
+    /* transition-delay: 2s; */
+    /* transition: all 2s steps(5); */
+    /* animation-name: move;
+    animation-duration: 2s;
+    animation-timing-function:ease;
+    animation-delay: 2s;
+    animation-iteration-count: 3;
+    animation-direction: reverse;
+    animation-fill-mode: forwards; */
+    animation:changeColor 10s linear infinite;
+}
+.box:hover{
+    /* background-color: aqua; */
+    /* transform: scale(2); */
+    /* transform: scalex(2); */
+    /* transform: scaley(3); */
+    /* transform: rotate(45deg); */
+    /* transform: rotatex(135deg); */
+    /* transform: rotateY(360deg); */
+     /* transform: scale(2,2);     */
+     /* transform: translate(400px); */
+     /* transform: translate(100px,150px); */
+     /* transform: scale(2) rotate(45deg) translate(100px); */
+     /* transform: scalex(3);
+     transform-origin: right; */
+     /* transform: skew(90deg); */
+    
+}
+/* @keyframes move{
+    from{
+background-color: brown;
+transform: translate(0px);
+    }
+    to{
+background-color: aquamarine;
+transform: translate(300px);
+    }
+} */
+
+@keyframes changeColor{
+    0%{
+        background-color: rgb(40, 5, 72);
+    }
+    25%{
+        background-color: bisque;
+    }
+    50%{
+        background-color: aquamarine;
+    }
+    75%{
+        background-color: chartreuse;
+    }
+    100%{
+        background-color: rgb(225, 12, 12);
+    }
+}

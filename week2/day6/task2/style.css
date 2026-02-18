@@ -107,6 +107,7 @@ header{
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         position: absolute;
         top:500px;
+        left: 300px;
         padding: 20px;
     }
     .cont-two{
@@ -118,7 +119,7 @@ header{
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         position: absolute;
         top:500px;
-        left: 550px;
+        left: 600px;
         /* margin-left: 15px; */
         padding: 20px;
     }
@@ -131,7 +132,7 @@ header{
         box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
         position: absolute;
         top:500px;
-        left: 850px;
+        left: 900px;
         /* margin-left: 15px; */
         padding: 20px;
     }
