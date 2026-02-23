@@ -1,0 +1,125 @@
+body{
+    background-color: black;
+}
+.main-container{
+    height: 650px;
+    width: 1000px;
+    border: 1px solid black;
+    display: flex;
+    padding-left: 200px;
+}
+.div-one{
+    height: 650;
+    width: 500px;
+    background-color: aliceblue;
+    position: relative;
+    
+    
+}
+.header{
+    display: flex;
+    gap: 100px;
+}
+.insect{
+    background-color: #1f6f6f;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+     padding-left: 40px;
+    width: 100px;
+}
+.header h1{
+    color: azure;
+    font-size: 20px;
+    
+}
+img{
+    position: absolute;
+    left: 280px;
+    top: 100px;
+    height: 500px;
+    width: 400px;
+}
+.logo{
+    display: flex;
+    position: absolute;
+    left: 850px;
+    top: 620px;
+    gap: 20px;
+    color: aliceblue;
+    font-size: 10px;
+}
+input{
+    height: 20px;
+    border-radius: 10px;
+    border: none;
+    background-color: antiquewhite;
+    margin-top: 20px;
+    padding-left: 10px;
+    
+}
+ .cont{
+    padding-left: 130px;
+    padding-top: 90px;
+    font-size: 19px;
+} 
+
+.div-two{
+    height: 650;
+    width: 500px;
+    background-color: rgb(235, 88, 88);
+    padding-left: 50px;
+}
+.header2{
+    display: flex;
+    gap: 80px;
+    font-size: 14px;
+    color: aliceblue;
+}
+.hou{
+    padding-top: 18px;
+    padding-left: 40px;
+    
+    
+}
+.content{
+    padding-left: 150px;
+    padding-top: 90px;
+    width: 200px;
+    color: aliceblue;
+}
+.button{
+    display: flex;
+    gap: 30px;
+    
+    
+}
+.house{
+    display: flex;
+    background-color: black;
+    gap: 15px;
+    width: 110px;
+    border-radius: 15px;
+    height: 30px;
+    font-size: 15px;
+    padding-top: 7px;
+    padding-left: 10px;
+
+}
+.icon{
+    background-color: aliceblue;
+    color: black;
+    border-radius: 50px;
+    height: 20px;
+    
+}
+.one{
+    height: 25px;
+    width: 50px;
+    border: 1px solid white ;
+    border-radius: 20px;
+    margin-top: 3px;
+    padding-left:8px;
+    padding-top: 5px;
+}
