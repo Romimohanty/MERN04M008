@@ -1,0 +1,128 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 100vh;
+    width:100vw;
+}
+.head{
+    display: flex;
+      justify-content: space-between;
+      padding-top: 10px;
+      padding-left: 10px;
+}
+.content{
+    display: flex;
+    padding-top: 10px;
+    gap: 30px;
+    padding-right: 80px;
+    font-size: 15px;
+    
+}
+.logo{
+    color: blue;
+    font-size: 15px;
+    padding-top: 5px;
+}
+.language{
+    height: 20px;
+    width: 90px;
+    color: blue;
+    border: 1px solid blue;
+    padding-top: 5px;
+    border-radius: 18px;
+    padding-left: 5px;
+}
+.language:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.download{
+    height: 20px;
+    width: 80px;
+    color:white;
+    border: 1px solid blue;
+    padding-top: 5px;
+    border-radius: 18px;
+    padding-left: 10px;
+    background-color: blue;
+}
+.download:hover{
+    background-color:fuchsia;
+}
+.para{
+    padding-top: 7px;
+}
+.para:hover{
+    color:blue;
+    
+}
+.logo2{
+   padding-top: 8px; 
+}
+.body{
+    display: flex;
+    padding-top: 40px;
+    
+}
+.work{
+    height: 400px;
+    width: 350px; 
+    padding-left: 100px;
+    padding-top: 100px;
+    
+}
+.img{
+    height: 450px;
+    width: 700px; 
+    margin-left: 50px;
+    padding-top: 20px;
+}
+img{
+    height: 450px;
+    width:700px; 
+}
+ .footer{
+    display: flex;
+    gap: 100px;
+    padding-left: 170px;
+}
+h3{
+    color: blue;
+}
+.logo3{
+    color: blue;
+}
+.paro{
+    padding-top: 20px;
+    padding-left: 8px;
+}
+.mob{
+     margin: 20px;
+     color: blue;
+     border: 1px solid blue;
+     border-radius: 18px;
+     padding: 10px;
+     width: 180px;
+     height: 20;
+
+}
+.mob:hover{
+    background-color: blue;
+    color: aliceblue;
+}
+.lap{
+    margin: 20px;
+    margin: 20px;
+     color: blue;
+     border: 1px solid blue;
+     border-radius: 18px;
+     padding: 10px;
+     width: 180px;
+     height: 20;
+}
+.lap:hover{
+    background-color: blue;
+    color: aliceblue;
+}
