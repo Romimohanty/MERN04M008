@@ -69,24 +69,27 @@
 .work{
     height: 400px;
     width: 350px; 
-    padding-left: 100px;
+    padding-left: 150px;
     padding-top: 100px;
+    
     
 }
 .img{
-    height: 450px;
+    height: 500px;
     width: 700px; 
-    margin-left: 50px;
+    margin-left: 100px;
     padding-top: 20px;
 }
 img{
-    height: 450px;
+    height: 500px;
     width:700px; 
 }
  .footer{
     display: flex;
     gap: 100px;
-    padding-left: 170px;
+    margin-left: 230px;
+    margin-top: 40px;
+
 }
 h3{
     color: blue;
