@@ -53,3 +53,5 @@ console.log(v,i)
 console.log(v*v);
 
  })
+
+ //
