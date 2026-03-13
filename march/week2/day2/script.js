@@ -24,7 +24,7 @@ hof1()()
 
 //callback function
 //callback function it is a function used as an argument at the time of calling
-//it is the part of higher order dunction
+//it is the part of higher order function
 
 //arrow function
 let arrowFun= () =>{
