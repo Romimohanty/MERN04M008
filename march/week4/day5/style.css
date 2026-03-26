@@ -1,0 +1,414 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:rgb(230, 196, 201);
+    height: vh;
+    width: vw;
+}
+.container{
+    height:660px;
+    width: vw;
+}
+nav{
+    height: 40px;
+    width: vw;
+    background-color: aliceblue;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 10px;
+}
+.content{
+    display: flex;
+    gap: 40px;
+}
+.paras:hover{
+    color: blue;
+    text-decoration: underline;
+}
+.bodyy{
+    display: flex;
+    
+}
+.logos{
+
+    margin-right: 80px;
+}
+.logo{
+    margin-left: 80px;
+    font-size: 20px;
+    color: rgb(12, 12, 178);
+    font-weight: 50px;
+}
+.one{
+    height: 600px;
+    width: 350px;
+    margin-left: 100px;
+    margin-top: 200px;
+}
+.two{
+    height:450px ;
+    width: 450px;
+    
+}
+img{
+    height: 450px;
+    width: 450px;
+    margin-left: 200px;
+    margin-top: 100px;
+}
+.logo2{
+    color: rgb(212, 24, 24);
+
+}
+.firsth1{
+    padding-top: 15px;
+    font-size: 40px;
+    
+}
+.para1{
+    padding-top: 15px;
+    font-size: 18px;
+}
+.primary{
+height :30px;
+width: 120px;
+border-radius: 5px;
+background-color: rgb(38, 38, 235);
+border: none;
+color: aliceblue;
+margin-top: 15px;
+}
+
+.container2{
+    height: 900px;
+}
+.bodyy2{
+    height:250px;
+    width:vw;
+    background-color: aliceblue;
+    padding-left: 100px;
+    padding-right: 120px;
+}
+.arrow{
+    display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+}
+.primaryyy{
+    width: 30px;
+    height: 25px;
+    background-color: rgb(36, 36, 184);
+    border: none;
+    color: aliceblue;
+    border-radius: 3px;
+}
+.primaryy{
+    width: 30px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 3px;
+}
+.box{
+    display: flex;
+    gap: 20px;
+    padding-left: 90px;
+    padding-top: 30px;
+}
+.boxx{
+    height: 110px;
+    width: 150px;
+    border: 1px solid black;
+    
+}
+.onee{
+    background-image: url("https://4.imimg.com/data4/SJ/BA/MY-3018414/apple-laptop-500x500.jpg");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    background-color:aliceblue ;
+
+}
+.twoo{
+    background-image: url("https://store.storeimages.cdn-apple.com/1/as-images.apple.com/is/iphone-card-40-17-202509_FMT_WHH?wid=508&hei=472&fmt=p-jpg&qlt=95&.v=WVVFRzUzVk1oblJhbW9PbGNSU25jckJGdUIrY1B0R3cwWTRVMzRnT1RWUmZMQnBkTWowcTVzai9uUEgzVDdYM3NtS0NkZnlUKzBRdlpRai9zMDR0cTQ2SzdvNlo3RnBaVmExOWFYbG5HREhZVGtLdlpieFJ0bE9GNURYSnYrUWw");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    background-color:aliceblue ;
+}
+.three{
+    background-image: url("https://www.carlington.in/cdn/shop/files/Carliongton_premium_black_analog_mens_s_watch_6010.jpg?v=1712816619&width=2048");
+background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    background-color:aliceblue ;
+}
+.four{
+    background-image: url("https://trueview.co.in/wp-content/uploads/2023/06/T18140-4.webp");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    background-color:aliceblue ;
+}
+.five{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSLfQYVl9EhwW4UMUXto_GVpwi_29pWVTWZLQ&s");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    background-color:aliceblue ;
+}
+.six{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9MSpm4AntNXI4KG3KoygMyAUCaoEPRr44LQ&s");
+    background-position: center;
+    background-size: cover;
+    border: none;
+    border-radius: 5px;
+    background-color:aliceblue ;
+
+}
+.divmsg{
+    display: flex;
+    padding-left: 90px;
+    padding-top: 10px;
+
+}
+.laptop{
+    padding-left: 50px;
+}
+.phone{
+    padding-left: 140px;
+}
+.watch{
+   padding-left: 120px; 
+}
+.camera{
+   padding-left: 130px; 
+}  
+.headphone{
+   padding-left: 130px;  
+}
+.videogame{
+    padding-left: 110px; 
+}
+.bodyy3{
+    height: 500px;
+    width: vw;
+    background-color: aliceblue;
+}
+.button3{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.third{
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+    width: 130px;
+    height: 30px;
+
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 20px;
+    /* height: 400px;
+    width: 500px; */
+    margin-left: 100px;
+    margin-top: 40px;
+}
+.grids{
+    height: 150px;
+    width: 200px;
+    border: 1px solid pink;
+   /* border: none; */
+   border-radius: 5px;
+    
+}
+.one1{
+    background-image: url("https://alogic.in/cdn/shop/files/EchelonWirelessMouse_Mac_1_v1.webp?v=1748336526&width=2048");
+background-position:center;
+background-size: cover;
+}
+.two2{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRcDEQ5oturBbwzi0uJscalDGzNQcgD5ZyJGQ&s");
+background-position:center;
+background-size: cover;
+}
+.three3{
+    background-image: url("https://rukminim2.flixcart.com/image/480/640/xif0q/dslr-camera/v/7/a/-original-imagt3hdjbhvuyb3.jpeg?q=90");
+    background-position: center;
+    background-size: cover;
+}
+.four4{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTV-6ak-V8AD7NrLiEnY9oJhMy0SdWzBkIOiw&s");
+    background-position: center;
+    background-size: cover;
+}
+.five5{
+    background-image: url("https://trueview.co.in/wp-content/uploads/2023/06/T18140-1.webp");
+background-position: center;
+    background-size: cover;
+}
+.six6{
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ2FNCOcvvXhGvLBiQoDDADJXYeL8Osdnjs6A&s");
+background-position: center;
+    background-size: cover;
+}
+.seven7{
+    background-image: url("https://5.imimg.com/data5/EL/HG/MY-39906285/hp-laptop-500x500.jpg");
+background-position: center;
+    background-size: cover;
+}
+.eight8{
+    background-image: url("https://m.media-amazon.com/images/I/31j2NxYx5+L.jpg");
+background-position: center;
+    background-size: cover;
+}
+.bodyy4{
+    height: 500px;
+    width: vw;
+    background-color: aliceblue;
+}
+.button4{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 100px;
+    padding-right: 100px;
+}
+.samsung{
+display: flex;
+padding-left: 100px;
+padding-right: 100px;
+margin-top: 30px;
+margin-left: 120px;
+}
+.sam1{
+    height: 450px;
+    width: 450px;
+    /* border: 1px solid black; */
+    background-image: url("https://images.samsung.com/is/image/samsung/p6pim/in/2501/gallery/in-galaxy-s25ultra-qs938-ef-qs938ctegin-544457035?$Q90_1248_936_F_PNG$");
+    background-position: center;
+    background-size: cover;
+    /* padding-left: 80px; */
+    
+}
+.sam2{
+    height: 450px;
+    width: 400px;
+    /* border: 1px solid black; */
+    margin-top: 15px; 
+    margin-left:40px ;   
+    
+}
+
+.sama{
+    height: 40px;
+    width: 100px;
+    background-color: blue;
+    color: aliceblue;
+    border: none;
+}
+.sami1{
+    display: flex;
+}
+.imogi1{
+    /* background-image: url("https://static.vecteezy.com/system/resources/previews/048/690/604/non_2x/3d-blue-headphones-isolated-on-transparent-background-free-png.png");
+    background-position: left;
+    background-repeat: no-repeat; */
+     height: 100px;
+    width: 200px; 
+}
+.rom1{
+    display: flex;
+    border: 1px solid white;
+    gap: 20px;
+    /* padding-top: 5px; */
+}
+.pic1{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+     margin-left: 10px; 
+     background-image: url("https://www.fingers.co.in/secure/api/image-tool/index.php?src=https://www.fingers.co.in/secure/api/uploads/products/1761298888_1.png&w=500&h=500&zc=2");
+     background-position: center;
+     background-size: cover;
+}
+.pic-cont1{
+    margin-top: 12px;
+}
+
+
+.rom2{
+    display: flex;
+    border: 1px solid white;
+    gap: 20px;
+    /* padding-top: 5px; */
+    margin-top: 5px;
+}
+.pic2{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+     margin-left: 10px; 
+     background-image: url("https://4.imimg.com/data4/SJ/BA/MY-3018414/apple-laptop-500x500.jpg");
+     background-position: center;
+     background-size: cover;
+}
+.pic-cont2{
+    margin-top: 12px;
+}
+
+
+
+.rom3{
+    display: flex;
+    border: 1px solid white;
+    gap: 20px;
+    /* padding-top: 5px; */
+        margin-top: 5px;
+
+}
+.pic3{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+     margin-left: 10px; 
+     background-image: url("https://www.titan.co.in/on/demandware.static/-/Sites-titan-master-catalog/default/dw051612ee/images/Titan/Catalog/1825KM03_1.jpg");
+     background-position: center;
+     background-size: cover;
+}
+.pic-cont3{
+    margin-top: 12px;
+}
+
+
+
+.rom4{
+    display: flex;
+    border: 1px solid white;
+    gap: 20px;
+    /* padding-top: 5px; */
+        margin-top: 5px;
+
+}
+.pic4{
+    height: 100px;
+    width: 100px;
+    /* border: 1px solid black; */
+     margin-left: 10px; 
+     background-image: url("https://www.wishluck.in/cdn/shop/files/3_22_2190b5cf-74f5-4801-81cb-63d9d864ba8d_1024x1024.webp?v=1749637056");
+     background-position: center;
+     background-size: cover;
+}
+.pic-cont4{
+    margin-top: 12px;
+}
