@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Anand Sweets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        *{ margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial; }
+
+        .menu, .menu1, .menu2, .menu3, .menu4, .menu5 { list-style: none; display: flex; gap: 20px; }
+        .menu li, .menu1 li, .menu2 li, .menu3 li, .menu4 li, .menu5 li { position: relative; }
+        .menu a, .menu1 a, .menu2 a, .menu3 a, .menu4 a, .menu5 a { text-decoration: none; padding: 10px; display: block; color: black; }
+
+        .dropdown-content, .dropdown-content1, .dropdown-content2, .dropdown-content3, .dropdown-content4, .dropdown-content5 {
+            display: none; position: absolute; top: 40px; left: 0; background: white;
+            box-shadow: 0px 4px 10px rgba(0,0,0,0.2); width: 180px; z-index: 10;
+        }
+        .dropdown:hover .dropdown-content, .dropdown1:hover .dropdown-content1, .dropdown2:hover .dropdown-content2, 
+        .dropdown3:hover .dropdown-content3, .dropdown4:hover .dropdown-content4, .dropdown5:hover .dropdown-content5 { display: block; }
+
+        .navone{ height: 40px; background-color: rgb(186, 15, 15); color: aliceblue; text-align: center; padding-top: 10px; }
+        .navtwo{ display: flex; height: 60px; background-color:white; justify-content: space-between; padding: 0 50px; align-items: center; }
+        .logo1{ display: flex; gap: 20px; align-items: center; }
+        .mitha{ font-weight:bold; font-size: 30px; color: rgb(224, 182, 123); text-decoration: none; }
+        .content{ display: flex; gap: 20px; }
+
+        #cart-count {
+            position: absolute; top: -12px; right: -10px; background: red; color: white;
+            border-radius: 50%; padding: 2px 6px; font-size: 11px; display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navone">Deliveries in Bangalore may take Upto 3days.For same day deliveries please order on swiggy or Zomato</nav>
+    <nav class="navtwo">
+        <a href="index.html" class="mitha">ANAND</a>
+        <div class="content">    
+            <ul class="menu"><li class="dropdown"><a href="#">Sweets ▾</a><ul class="dropdown-content"><li><a href="burfi.html">Burfi</a></li><li><a href="laddu.html">Healthy Laddu</a></li></ul></li></ul>
+            <ul class="menu1"><li class="dropdown1"><a href="#">Namkeen ▾</a><ul class="dropdown-content1"><li><a href="healthysnacks.html">Healthy Snacks</a></li><li><a href="southern.html">Southern Special</a></li></ul></li></ul>
+            <ul class="menu2"><li class="dropdown2"><a href="#">Dry Fruits ▾</a><ul class="dropdown-content2"><li><a href="dryfruits.html">All dry Fruits</a></li><li><a href="nuts.html">Flavoured Nuts</a></li></ul></li></ul>
+            <ul class="menu3"><li class="dropdown3"><a href="#">Gifting ▾</a><ul class="dropdown-content3"><li><a href="assorted.html">Wedding Gifting</a></li><li><a href="sovenir.html">Corporate Gifting</a></li></ul></li></ul>
+            <ul class="menu4"><li class="dropdown4"><a href="#">About Us ▾</a><ul class="dropdown-content4"><li><a href="about.html">About Us</a></li><li><a href="brand.html">Our Brand</a></li></ul></li></ul>
+            <ul class="menu5"><li class="dropdown5"><a href="#">Explore & content ▾</a><ul class="dropdown-content5"><li><a href="blogs.html">Blogs</a></li><li><a href="contact.html">Contact</a></li></ul></li></ul>
+        </div>
+        
+        <div class="logo1">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <i class="fa-solid fa-user"></i>
+            <div style="position: relative; cursor: pointer;" onclick="window.location.href='cart.html'">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <span id="cart-count">0</span>
+            </div>
+        </div>
+    </nav>
+
+    <div style="max-width: 1100px; margin: 50px auto; padding: 0 20px;">
+        <h2 style="font-family: 'Times New Roman', serif; font-size: 32px; color: #1a2b3c; margin-bottom: 15px;">We'd Love To Hear From You</h2>
+        <p style="font-size: 15px; color: #555; margin-bottom: 40px;">Whether it's feedback, suggestion, or a complaint, fill the form below.</p>
+        
+        <div style="width: 100%; margin-bottom: 60px;">
+            <img src="https://cdn.shopify.com/s/files/1/0569/3456/4001/files/contact-from-banner.png?v=1687504037" style="width: 100%; border-radius: 4px;">
+        </div>
+
+        <div style="display: flex; justify-content: space-between; gap: 80px; flex-wrap: wrap;">
+            <div style="flex: 1; min-width: 300px;">
+                <h3 style="font-family: 'Times New Roman', serif; font-size: 26px; margin-bottom: 40px;">Head Office</h3>
+                <p><b>Address:</b> Anjanadri Heights, Dickenson Rd, Bengaluru</p>
+                <p><b>Email:</b> care@anandsweets.net</p>
+                <img src="https://cdn.shopify.com/s/files/1/0569/3456/4001/files/contact-ofc-banner.png?v=1687504423" style="width: 100%; margin-top: 20px;">
+            </div>
+
+            <div style="flex: 1.2; min-width: 300px;">
+                <h3 style="font-family: 'Times New Roman', serif; font-size: 26px; margin-bottom: 30px;">Talk to us</h3>
+                
+                <form id="contactForm">
+                    <div style="margin-bottom: 20px;">
+                        <input type="text" id="name" placeholder="Name" style="width: 100%; padding: 15px; border: 1px solid #eee; background: #fafafa;" required>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <input type="email" id="email" placeholder="Email" style="width: 100%; padding: 15px; border: 1px solid #eee; background: #fafafa;" required>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <input type="tel" id="phone" placeholder="Phone Number" style="width: 100%; padding: 15px; border: 1px solid #eee; background: #fafafa;" required>
+                    </div>
+                    <div style="margin-bottom: 20px;">
+                        <textarea id="message" placeholder="Message" rows="5" style="width: 100%; padding: 15px; border: 1px solid #eee; background: #fafafa;" required></textarea>
+                    </div>
+                    <button type="submit" style="background-color: #b3934d; color: white; border: none; padding: 15px 40px; cursor: pointer; font-weight: bold;">
+                        Submit Now
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateCartBadge() {
+            const badge = document.getElementById('cart-count');
+            const count = localStorage.getItem('mainCartCount') || 0;
+            if (parseInt(count) > 0) {
+                badge.innerText = count;
+                badge.style.display = 'block';
+            }
+        }
+        window.onload = updateCartBadge;
+
+        const form = document.getElementById('contactForm');
+        
+        form.addEventListener('submit', function(event) {
+            event.preventDefault(); 
+
+            const userName = document.getElementById('name').value;
+            const userEmail = document.getElementById('email').value;
+
+            alert("✅ Form Submitted Successfully!\n\nThank you, " + userName + ". We have received your message and will contact you at " + userEmail + " soon.");
+
+            form.reset();
+        });
+    </script>
+</body>
+</html>

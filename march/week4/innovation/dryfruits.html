@@ -1,0 +1,521 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+
+}
+/* .hero{
+    height: 560px;
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.menu1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu1 li {
+    position: relative;
+}
+
+.menu1 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content1 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu2 li {
+    position: relative;
+}
+
+.menu2 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content2 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+
+
+.menu3 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu3 li {
+    position: relative;
+}
+
+.menu3 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content3 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+
+
+.menu4 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu4 li {
+    position: relative;
+}
+
+.menu4 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content4 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+}
+
+.menu5 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu5 li {
+    position: relative;
+}
+
+.menu5 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content5 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content5 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown5:hover .dropdown-content5 {
+    display: block;
+}
+
+
+.navone{
+    height: 40px;
+    width: vw;
+    background-color: rgb(186, 15, 15);
+    color: aliceblue;
+    padding-left: 300px;
+    padding-top: 10px;
+}
+.navtwo{
+    display: flex;
+    height: 60px;
+    width: vw;
+    background-color:white ;
+    justify-content: space-between;
+    
+
+}
+.logo1{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+    gap: 20px;
+    
+
+}
+.mitha{
+    padding-top: 15px;
+    font-weight:bold;
+    font-size: 30px;
+    color: rgb(224, 182, 123);
+    padding-left: 100px;
+}
+.content{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+     <nav class="navone">Deliveries in Bangalore may take Upto 3days.For same day deliveries please order on swiggy or Zomato</nav>
+        <nav class="navtwo">
+            <div class="mitha">ANAND</div>
+        <div class="content">    
+ <ul class="menu">
+        <li class="dropdown">
+            <a href="#">Sweets ▾</a>
+
+            <ul class="dropdown-content">
+                <li><a href="burfi.html">Burfi</a></li>
+                <li><a href="laddu.html">Healthy Laddu</a></li>
+            </ul>
+        </li>
+        </ul>
+       
+         <ul class="menu1">
+<li class="dropdown1">
+            <a href="#">Namkeen ▾</a>
+
+            <ul class="dropdown-content1">
+                <li><a href="healthysnacks.html">Healthy Snacks</a></li>
+                <li><a href="southern.html">Southern Special</a></li>
+                
+            </ul>
+        </li>
+
+</ul>
+
+<ul class="menu2">
+        <li class="dropdown2">
+            <a href="#">Dry Fruits ▾</a>
+
+            <ul class="dropdown-content2">
+                <li><a href="dryfruits.html">All dry Fruits</a></li>
+                <li><a href="nuts.html">Flavoured Nuts</a></li>
+                
+            </ul>
+        </li></ul>
+
+     <ul class="menu3">   
+ <li class="dropdown3">
+            <a href="#">Gifting ▾</a>
+
+            <ul class="dropdown-content3">
+                <li><a href="assorted.html">Wedding Gifting</a></li>
+                <li><a href="sovenir.html">Corporate Gifting</a></li>
+            </ul>
+        </li>
+        </ul>
+
+
+        <ul class="menu4">
+<li class="dropdown4">
+            <a href="#">About Us ▾</a>
+
+            <ul class="dropdown-content4">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="brand.html">Our Brand</a></li>
+                
+            </ul>
+        </li></ul>
+
+
+
+<ul class="menu5">
+ <li class="dropdown5">
+            <a href="#">Explore & content ▾</a>
+
+            <ul class="dropdown-content5">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </li></ul>
+        </div>
+        
+        <div class="logo1">
+            <i class="fa-brands fa-sistrix"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </nav>
+
+
+           <div style="height: 580px; width: 100vw; background-color: rgb(243, 237, 227);">
+        <div class="burfi">
+            <div>
+            <div></div>
+            <h1 style="padding-left: 600px; color: rgb(14, 14, 109); padding-top: 30px;">Dry Fruits</h1>
+            <div></div>
+            </div>
+            <p style="padding-left: 610px; padding-top:20px ; "><a href="index.html" style="text-decoration: none;"> home > Dry Fruits</p></a>
+            <p style="padding-left: 640px; padding-top:20px;font-size: 18px;">4 Products</p>
+        </div>
+
+
+        <div class="national" style="display: flex; margin-top: 20px;">
+            <div class="card1">
+                <img src="https://cdn.shopify.com/s/files/1/0569/3456/4001/files/product_shelf_life.svg?v=1709729633" style="padding-left: 350px; height: 60px;">
+                <p style="padding-left: 300px;">National Shipping in 5-7 days</p>
+            </div>
+            <div class="card2">
+                <img src="https://cdn.shopify.com/s/files/1/0569/3456/4001/files/c_shelf_life.svg?v=1710410317" style="padding-left: 130px;">
+                <p style="padding-left: 100px;">15 Days Shelf Life</p>
+            </div>
+            <div class="card3">
+                <img src="https://cdn.shopify.com/s/files/1/0569/3456/4001/files/c_no_preservatives.svg?v=1710410318" style="padding-left: 180px;">
+                <p style="padding-left: 120px;">No PreservativesNo Preservatives</p>
+            </div>
+        </div>
+
+
+        <div style="display: flex; gap: 10px; height: 300px; margin-left: 70px;  margin-top: 50px;"> 
+            <div class="card4">
+                <img src="https://www.anandsweets.in/cdn/shop/files/all-products.png?v=1685687087" style="height: 200px;width: 200px; border-radius: 8px;">
+                <h3 style="padding-left: 50px;">All Products</h3>
+                <p style="padding-left: 60px;">91 products</p>
+            </div>
+             <div class="card5">
+                <img src="https://www.anandsweets.in/cdn/shop/files/sweets_8b268f2d-ded2-4ef7-afc9-96689773f95e.png?v=1684238049&width=533" style="height: 200px;width: 200px;border-radius: 8px;">
+                <h3 style="padding-left: 50px;">Sweets</h3>
+                <p style="padding-left: 50px;">41 products</p>
+            </div>
+             <div class="card6">
+                <img src="https://www.anandsweets.in/cdn/shop/files/Indian-biscoti_75309bdb-3f51-4f80-a792-600b1a57fe7c.png?v=1685687514" style="height: 200px;width: 200px;border-radius: 8px;">
+                <h3 style="padding-left: 50px;">Indian</h3>
+                <p style="padding-left: 50px;">91 products</p>
+            </div>
+             <div class="card7">
+                <img src="https://www.anandsweets.in/cdn/shop/files/guilt_free.png?v=1685690388" style="height: 200px;width: 200px;border-radius: 8px;">
+                <h3 style="padding-left: 50px;">All Products</h3>
+                <p style="padding-left: 60px;">91 products</p>
+            </div>
+             <div class="card8">
+                <img src="https://www.anandsweets.in/cdn/shop/files/tea-time-snacks.png?v=1684238065&width=533" style="height: 200px;width: 200px;border-radius: 8px;">
+                <h3 style="padding-left: 50px;">All Products</h3>
+                <p style="padding-left: 60px;">91 products</p>
+            </div>
+             <div class="card9">
+                <img src="https://www.anandsweets.in/cdn/shop/files/namkeen_d632508c-e897-427a-aec4-edae6d3d4172.png?v=1684238080&width=533" style="height: 200px;width: 200px;border-radius: 8px;">
+                <h3 style="padding-left: 50px;">All Products</h3>
+                <p style="padding-left: 60px;">91 products</p>
+            </div>
+        </div>
+
+
+
+
+
+<div style="display:grid;grid-template-columns: 1fr 1fr; margin-left: 60px; margin-right: 30px;">
+    <div class="card10">
+        <img src="https://www.anandsweets.in/cdn/shop/files/TRAVANCOREBack.jpg?v=1759839459&width=535" height="500px" width="600px" class="p-img">
+        <p class="p-name">TRAVANCORE dry fruits</p>
+        <p class="p-price">₹ 1,190</p>
+       <div style="display: flex; align-items: center; gap: 15px;">
+  
+
+  <div style="display: flex; align-items: center; justify-content: space-between; width: 200px; height: 55px; border: 1px solid #c9b28b; border-radius: 6px; padding: 0 20px; font-size: 22px;">
+    <span class="minus-btn" style="cursor:pointer">-</span>
+    <span class="qty-val">1</span>
+    <span class="plus-btn" style="cursor:pointer">+</span>
+  </div>
+  <div class="add-to-cart-btn" style="width: 400px; height: 55px; background-color: #d9a520; color: white; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 22px; font-weight: 600;">
+    Add to cart
+  </div>
+
+</div>
+    </div>
+
+
+
+
+    <div class="card11">
+        <img src="https://www.anandsweets.in/cdn/shop/files/JHEELBATTIBack.jpg?v=1759839554&width=535" height="500px" width="600px" class="p-img">
+        <p class="p-name">JHEEL BATTI - ASSORTED</p>
+        <p class="p-price">₹ 650</p>
+       <div style="display: flex; align-items: center; gap: 15px;">
+  
+  
+  <div style="display: flex; align-items: center; justify-content: space-between; width: 200px; height: 55px; border: 1px solid #c9b28b; border-radius: 6px; padding: 0 20px; font-size: 22px;">
+    <span class="minus-btn" style="cursor:pointer">-</span>
+    <span class="qty-val">1</span>
+    <span class="plus-btn" style="cursor:pointer">+</span>
+  </div>
+  <div class="add-to-cart-btn" style="width: 400px; height: 55px; background-color: #d9a520; color: white; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 22px; font-weight: 600;">
+    Add to cart
+  </div>
+
+</div>
+    </div>
+
+    <div class="card12" style="padding-top: 30px;">
+        <img src="https://www.anandsweets.in/cdn/shop/products/pista.png?v=1713442558&width=535" height="500px" width="600px" class="p-img">
+        <p class="p-name">Pistachios </p>
+        <p class="p-price">₹ 480</p>
+       <div style="display: flex; align-items: center; gap: 15px;">
+  
+  
+  <div style="display: flex; align-items: center; justify-content: space-between; width: 200px; height: 55px; border: 1px solid #c9b28b; border-radius: 6px; padding: 0 20px; font-size: 22px;">
+    <span class="minus-btn" style="cursor:pointer">-</span>
+    <span class="qty-val">1</span>
+    <span class="plus-btn" style="cursor:pointer">+</span>
+  </div>
+  <div class="add-to-cart-btn" style="width: 400px; height: 55px; background-color: #d9a520; color: white; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 22px; font-weight: 600;">
+    Add to cart
+  </div>
+
+</div>
+    </div>
+
+    <div class="card13" style="padding-top: 30px;">
+        <img src="https://www.anandsweets.in/cdn/shop/products/raisins_1.png?v=1714368593&width=535" height="500px" width="600px" class="p-img">
+        <p class="p-name">Raisins</p>
+        <p class="p-price">₹ 210</p>
+       <div style="display: flex; align-items: center; gap: 15px;">
+  
+  
+  <div style="display: flex; align-items: center; justify-content: space-between; width: 200px; height: 55px; border: 1px solid #c9b28b; border-radius: 6px; padding: 0 20px; font-size: 22px;">
+    <span class="minus-btn" style="cursor:pointer">-</span>
+    <span class="qty-val">1</span>
+    <span class="plus-btn" style="cursor:pointer">+</span>
+  </div>
+  <div class="add-to-cart-btn" style="width: 400px; height: 55px; background-color: #d9a520; color: white; display: flex; align-items: center; justify-content: center; border-radius: 6px; font-size: 22px; font-weight: 600;">
+    Add to cart
+  </div>
+
+</div>
+    </div>
+
+
+
+
+   </div> 
+   <script src="cart.js"></script>
+</body>
+</html>

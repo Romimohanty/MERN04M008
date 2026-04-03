@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+
+}
+/* .hero{
+    height: 560px;
+    background-image: url(image.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+} */
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.menu1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu1 li {
+    position: relative;
+}
+
+.menu1 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content1 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu2 li {
+    position: relative;
+}
+
+.menu2 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content2 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+
+
+.menu3 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu3 li {
+    position: relative;
+}
+
+.menu3 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content3 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+
+
+.menu4 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu4 li {
+    position: relative;
+}
+
+.menu4 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content4 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+}
+
+.menu5 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu5 li {
+    position: relative;
+}
+
+.menu5 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content5 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content5 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown5:hover .dropdown-content5 {
+    display: block;
+}
+
+
+.navone{
+    height: 40px;
+    width: vw;
+    background-color: rgb(186, 15, 15);
+    color: aliceblue;
+    padding-left: 300px;
+    padding-top: 10px;
+}
+.navtwo{
+    display: flex;
+    height: 60px;
+    width: vw;
+    background-color:white ;
+    justify-content: space-between;
+    
+
+}
+.logo1{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+    gap: 20px;
+    
+
+}
+.mitha{
+    padding-top: 15px;
+    font-weight:bold;
+    font-size: 30px;
+    color: rgb(224, 182, 123);
+    padding-left: 100px;
+}
+.content{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+     <nav class="navone">Deliveries in Bangalore may take Upto 3days.For same day deliveries please order on swiggy or Zomato</nav>
+        <nav class="navtwo">
+            <div class="mitha">ANAND</div>
+        <div class="content">    
+ <ul class="menu">
+        <li class="dropdown">
+            <a href="#">Sweets ▾</a>
+
+            <ul class="dropdown-content">
+                <li><a href="burfi.html">Burfi</a></li>
+                <li><a href="laddu.html">Healthy Laddu</a></li>
+            </ul>
+        </li>
+        </ul>
+       
+         <ul class="menu1">
+<li class="dropdown1">
+            <a href="#">Namkeen ▾</a>
+
+            <ul class="dropdown-content1">
+                <li><a href="healthysnacks.html">Healthy Snacks</a></li>
+                <li><a href="southern.html">Southern Special</a></li>
+                
+            </ul>
+        </li>
+
+</ul>
+
+<ul class="menu2">
+        <li class="dropdown2">
+            <a href="#">Dry Fruits ▾</a>
+
+            <ul class="dropdown-content2">
+                <li><a href="dryfruits.html">All dry Fruits</a></li>
+                <li><a href="nuts.html">Flavoured Nuts</a></li>
+                
+            </ul>
+        </li></ul>
+
+     <ul class="menu3">   
+ <li class="dropdown3">
+            <a href="#">Gifting ▾</a>
+
+            <ul class="dropdown-content3">
+                <li><a href="assorted.html">Wedding Gifting</a></li>
+                <li><a href="sovenir.html">Corporate Gifting</a></li>
+            </ul>
+        </li>
+        </ul>
+
+
+        <ul class="menu4">
+<li class="dropdown4">
+            <a href="#">About Us ▾</a>
+
+            <ul class="dropdown-content4">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="brand.html">Our Brand</a></li>
+                
+            </ul>
+        </li></ul>
+
+
+
+<ul class="menu5">
+ <li class="dropdown5">
+            <a href="#">Explore & content ▾</a>
+
+            <ul class="dropdown-content5">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </li></ul>
+        </div>
+        
+        <div class="logo1">
+            <i class="fa-brands fa-sistrix"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </nav>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div style="padding: 60px 20px; background-color: #ffffff; text-align: center; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+    
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 36px; color: #1a2b3c; margin: 0 0 20px 0; font-weight: 500;">
+        Excellence In Every Morsel
+    </h2>
+
+    <p style="max-width: 900px; margin: 0 auto 40px auto; color: #555; font-size: 16px; line-height: 1.6; letter-spacing: 0.3px;">
+        For over 3 decades, Anand has grown to be synonymous with premium quality Indian Sweets. It has created a niche for itself for being one of the most premium and giftable brands in Bengaluru today.
+    </p>
+
+    <div style="max-width: 1200px; margin: 0 auto; border-radius: 4px; overflow: hidden;">
+        <img src="https://www.anandsweets.in/cdn/shop/files/Pattern_Banner_1.png?v=1687432524&width=1780" alt="Anand Sweets Collection" style="width: 100%; height: auto; display: block;">
+    </div>
+
+</div>
+
+
+<div style="display: flex; align-items: center; justify-content: center; padding: 80px 10%; background-color: #fcfbf7; gap: 60px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">
+
+    <div style="flex: 1;">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 32px; color: #1a2b3c; margin-bottom: 25px; line-height: 1.3; font-weight: 500;">
+            Quality That Delights, In Every Bite.
+        </h2>
+        
+        <p style="font-size: 15px; color: #444; line-height: 1.8; text-align: left; margin: 0;">
+            Over decades, Anand has grown to be synonymous with premium quality Indian sweets. Using technique, skill and science, our mithai artisans have perfected our recipes, packaging and processes. At hygienic, state-of the-art making facility we mould over 30,000 kgs of sweets everyday to deliver noticeable freshness, patrons can feel, taste and enjoy. Only absolutely fresh, carefully selected ingredients sourced from the best across the country go into making every bite.
+        </p>
+    </div>
+
+    <div style="flex: 1;">
+        <img src="https://www.anandsweets.in/cdn/shop/files/about-us.png?v=1687423381" alt="Quality Sweets" style="width: 100%; height: auto; display: block; box-shadow: 10px 10px 0px #f0eee4;">
+    </div>
+
+</div>
+
+
+
+    <div style="max-width: 1100px; margin: 60px auto; padding: 20px; text-align: center;">
+        
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 32px; color: #1a2b3c; margin-bottom: 30px; font-weight: 500;">
+            Awards And Accreditations
+        </h2>
+
+        <div style="max-width: 950px; margin: 0 auto; color: #555; font-size: 14px; line-height: 1.8; letter-spacing: 0.2px;">
+            <p style="margin-bottom: 20px;">
+                As the most hygienic facility in the country, Anand has also been accredited by multiple health and food societies of the world. These accreditations require one adhere to strict quality norms Anand is one of the select few companies in India who has an ISO 22000:2018 certification. It is also a Halal Certified Company, along with certifications from Spice Board of India.
+            </p>
+            <p>
+                In addition, Anand's quest for authenticity and precision has won us numerous accolades, including the Times Food Award for the Best Mithai in Bangalore for 12 years in a row.
+            </p>
+        </div>
+
+        <div style="margin-top: 60px;">
+            <span style="display: block; color: #888; font-size: 12px; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 5px;">Priority</span>
+            <h3 style="font-family: 'Times New Roman', Times, serif; font-size: 28px; color: #1a2b3c; margin-top: 0; font-weight: 500;">
+                Certifications
+            </h3>
+        </div>
+
+        <div style="display: flex; justify-content: space-around; align-items: center; flex-wrap: wrap; margin-top: 50px; padding: 0 50px;">
+            <div style="width: 120px; padding: 10px;">
+                <img src="https://www.anandsweets.in/cdn/shop/files/since1988.svg?v=1684409220" alt="Since 1988" style="width: 100%; filter: grayscale(100%); opacity: 0.8;">
+            </div>
+            
+            <div style="width: 120px; padding: 10px;">
+                <img src="https://www.anandsweets.in/cdn/shop/files/iso_edb97c4a-6d94-4ffc-96cc-c17016c17130.svg?v=1684409274" alt="ISO Certified" style="width: 100%; filter: grayscale(100%); opacity: 0.8;">
+            </div>
+
+            <div style="width: 120px; padding: 10px;">
+                <img src="https://www.anandsweets.in/cdn/shop/files/fda.svg?v=1687516937" alt="FDA" style="width: 100%; filter: grayscale(100%); opacity: 0.8;">
+            </div>
+
+            <div style="width: 120px; padding: 10px;">
+                <img src="https://www.anandsweets.in/cdn/shop/files/fssai_7efa766d-db85-4199-b968-df519f660461.svg?v=1687516937" alt="FSSAI" style="width: 100%; filter: grayscale(100%); opacity: 0.8;">
+            </div>
+        </div>
+
+    </div>
+
+    <div style="position: fixed; right: 20px; bottom: 50%; transform: translateY(50%);">
+        <button style="background-color: #b3934d; color: white; border: none; width: 35px; height: 35px; border-radius: 50%; cursor: pointer; font-size: 18px; display: flex; align-items: center; justify-content: center;">
+            &uarr;
+        </button>
+    </div>
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+    
+</body>
+</html>

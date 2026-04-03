@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Cart</title>
+    <style>
+        .cart-container { padding: 50px; font-family: Arial; }
+        .cart-item { display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #ddd; padding: 15px 0; }
+        .cart-item img { width: 100px; height: 100px; border-radius: 8px; }
+        .clear-btn { background: red; color: white; padding: 10px 20px; border: none; cursor: pointer; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div class="cart-container">
+        <h1>Your Shopping Cart</h1>
+        <div id="cart-items-list">
+            <!-- Yahan samaan dikhai dega -->
+        </div>
+        <div id="total-price" style="font-size: 24px; margin-top: 20px; font-weight: bold;"></div>
+        <button class="clear-btn" onclick="clearCart()">Clear Cart</button>
+        <br><br>
+        <a href="index.html">Continue Shopping</a>
+
+
+
+
+
+        <!-- <div style="margin-top: 30px; border-top: 2px solid black; padding-top: 20px; text-align: right; width: 80%;"> -->
+            <div>
+    <!-- Yahan total amount dikhega -->
+    <h2 id="grand-total" style="color: #d9a520;">Grand Total: ₹ 0</h2>
+    
+    <!-- Payment Button -->
+    <button id="checkout-btn" style="
+        background-color: green; 
+        color: white; 
+        padding: 15px 30px; 
+        font-size: 20px; 
+        border: none; 
+        border-radius: 8px; 
+        cursor: pointer;
+        font-weight: bold;
+        margin-top: 10px;">
+        Pay Now & Checkout
+    </button>
+</div>
+ 
+
+    </div>
+
+    <script>
+    // 1. Browser ki memory (LocalStorage) se wo 'myCart' list nikalna
+    let savedCart = JSON.parse(localStorage.getItem('myCart')) || [];
+    const container = document.getElementById('cart-items-list'); // Jahan samaan dikhana hai
+
+    if(savedCart.length === 0) {
+        container.innerHTML = "<h2>Aapka Cart khali hai!</h2>";
+    } else {
+        // 2. Har item ke liye HTML banana
+        savedCart.forEach(item => {
+            container.innerHTML += `
+                <div style="display:flex; border-bottom:1px solid #ccc; padding:10px; gap:20px; align-items:center;">
+                    <img src="${item.p_img}" style="width:100px; height:100px; border-radius:10px;">
+                    <div>
+                        <h3>${item.p_name}</h3>
+                        <p>Price: ${item.p_price}</p>
+                        <p>Quantity: ${item.p_qty}</p>
+                    </div>
+                </div>
+            `;
+        });
+    }
+
+
+
+
+    function updateCartPage() {
+        let savedCart = JSON.parse(localStorage.getItem('myCart')) || [];
+        const container = document.getElementById('cart-items-list'); // Jo aapne pehle banaya tha
+        const totalDisplay = document.getElementById('grand-total');
+        
+        let grandTotal = 0;
+
+        if (savedCart.length === 0) {
+            container.innerHTML = "<h2>Cart Khali Hai!</h2>";
+            totalDisplay.innerText = "Grand Total: ₹ 0";
+            return;
+        }
+
+        container.innerHTML = ""; // Pehle purana saaf karein
+
+        savedCart.forEach(item => {
+            // Price se number nikalna (₹ 370 se sirf 370 nikalna)
+            let cleanPrice = parseInt(item.p_price.replace(/[^0-9]/g, ''));
+            let itemTotal = cleanPrice * item.p_qty;
+            
+            grandTotal += itemTotal;
+
+            // Page par item dikhana
+            container.innerHTML += `
+                <div style="display:flex; border-bottom:1px solid #ccc; padding:10px; gap:20px; align-items:center;">
+                    <img src="${item.p_img}" style="width:100px; height:100px;">
+                    <div>
+                        <h3>${item.p_name}</h3>
+                        <p>Price: ${item.p_price} x ${item.p_qty}</p>
+                        <p><b>Total: ₹ ${itemTotal}</b></p>
+                    </div>
+                </div>
+            `;
+        });
+
+        // Grand Total update karein
+        totalDisplay.innerText = "Grand Total: ₹ " + grandTotal;
+    }
+
+    // PAYMENT ALERT LOGIC
+    document.getElementById('checkout-btn').addEventListener('click', function() {
+        let cartData = JSON.parse(localStorage.getItem('myCart')) || [];
+        
+        if(cartData.length === 0) {
+            alert("Pehle cart mein kuch add toh kijiye!");
+        } else {
+            // 1. Success Message
+            alert("✅ Payment Successful! \n\nAapka order place ho gaya hai. Dhanayavad!");
+
+            // 2. Cart saaf karein (Payment ke baad cart khali ho jana chahiye)
+            localStorage.clear();
+
+            // 3. Wapas home page par bhej dein
+            window.location.href = "index.html";
+        }
+    });
+
+    // Page khulte hi function chalayein
+    updateCartPage();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+</body>
+</html>

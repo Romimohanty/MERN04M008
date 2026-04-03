@@ -1,0 +1,470 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.menu1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu1 li {
+    position: relative;
+}
+
+.menu1 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content1 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu2 li {
+    position: relative;
+}
+
+.menu2 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content2 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+
+
+.menu3 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu3 li {
+    position: relative;
+}
+
+.menu3 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content3 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+
+
+.menu4 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu4 li {
+    position: relative;
+}
+
+.menu4 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content4 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+}
+
+.menu5 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu5 li {
+    position: relative;
+}
+
+.menu5 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content5 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content5 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown5:hover .dropdown-content5 {
+    display: block;
+}
+
+
+.navone{
+    height: 40px;
+    width: vw;
+    background-color: rgb(186, 15, 15);
+    color: aliceblue;
+    padding-left: 300px;
+    padding-top: 10px;
+}
+.navtwo{
+    display: flex;
+    height: 60px;
+    width: vw;
+    background-color:white ;
+    justify-content: space-between;
+    
+
+}
+.logo1{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+    gap: 20px;
+    
+
+}
+.mitha{
+    padding-top: 15px;
+    font-weight:bold;
+    font-size: 30px;
+    color: rgb(224, 182, 123);
+    padding-left: 100px;
+}
+.content{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+     <nav class="navone">Deliveries in Bangalore may take Upto 3days.For same day deliveries please order on swiggy or Zomato</nav>
+        <nav class="navtwo">
+            <div class="mitha">ANAND</div>
+        <div class="content">    
+ <ul class="menu">
+        <li class="dropdown">
+            <a href="#">Sweets ▾</a>
+
+            <ul class="dropdown-content">
+                <li><a href="burfi.html">Burfi</a></li>
+                <li><a href="laddu.html">Healthy Laddu</a></li>
+            </ul>
+        </li>
+        </ul>
+       
+         <ul class="menu1">
+<li class="dropdown1">
+            <a href="#">Namkeen ▾</a>
+
+            <ul class="dropdown-content1">
+                <li><a href="healthysnacks.html">Healthy Snacks</a></li>
+                <li><a href="southern.html">Southern Special</a></li>
+                
+            </ul>
+        </li>
+
+</ul>
+
+<ul class="menu2">
+        <li class="dropdown2">
+            <a href="#">Dry Fruits ▾</a>
+
+            <ul class="dropdown-content2">
+                <li><a href="dryfruits.html">All dry Fruits</a></li>
+                <li><a href="nuts.html">Flavoured Nuts</a></li>
+                
+            </ul>
+        </li></ul>
+
+     <ul class="menu3">   
+ <li class="dropdown3">
+            <a href="#">Gifting ▾</a>
+
+            <ul class="dropdown-content3">
+                <li><a href="assorted.html">Wedding Gifting</a></li>
+                <li><a href="sovenir.html">Corporate Gifting</a></li>
+            </ul>
+        </li>
+        </ul>
+
+
+        <ul class="menu4">
+<li class="dropdown4">
+            <a href="#">About Us ▾</a>
+
+            <ul class="dropdown-content4">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="brand.html">Our Brand</a></li>
+                
+            </ul>
+        </li></ul>
+
+
+
+<ul class="menu5">
+ <li class="dropdown5">
+            <a href="#">Explore & content ▾</a>
+
+            <ul class="dropdown-content5">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </li></ul>
+        </div>
+        
+        <div class="logo1">
+            <i class="fa-brands fa-sistrix"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </nav>
+
+     <div style="display: flex; align-items: center; background-color: #f7f7f7; padding: 50px 5%; font-family: 'Segoe UI', Arial, sans-serif;">
+x    <div style="flex: 1.2; padding-right: 40px;">
+        <img src="https://www.anandsweets.in/cdn/shop/files/Sakkare_Banner.png?v=1713357585&width=1780" alt="Signature Brands" style="width: 100%; height: auto; display: block;">
+    </div>
+
+    <div style="flex: 1; padding-left: 20px;">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 38px; color: #1a2b3c; margin-bottom: 15px; line-height: 1.2; font-weight: 500;">
+            Presenting Anand's Signature Brands
+        </h2>
+        <p style="font-size: 16px; color: #555; margin-bottom: 30px;">
+            The art of flavor, master and remastered.
+        </p>
+      <a href="index.html"><button style="background-color: #b3934d; color: white; border: none; padding: 12px 35px; font-size: 14px; font-weight: bold; cursor: pointer; text-transform: uppercase; border-radius: 4px;">
+            SHOP NOW
+        </button>
+    </div>
+</div>
+
+  
+
+
+
+<div style="text-align: center; padding: 80px 15%; background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif;">
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 28px; color: #1a2b3c; line-height: 1.4; margin-bottom: 25px; font-weight: 400;">
+        The Taste Of Royal India, Perfected Over Generations Anand, Sweetening Celebrations Since 1988.
+    </h2>
+    <p style="font-size: 14px; color: #666; line-height: 1.8; margin-bottom: 60px;">
+        We work from the heart, with passion to craft authentic sweets and savories with an inimitable character that's truly the taste of royal India. From lavish kaju sweets, to pure ghee delicacies and freshly made savories, every morsel is imagined and created with a single intent, to deliver joy - true Anand.
+    </p>
+
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 32px; color: #1a2b3c; font-weight: 400;">
+        Brands Under The Umbrella Of Anand
+    </h2>
+</div>
+
+
+
+
+<div style="padding: 60px 10%; background-color: #ffffff; font-family: 'Segoe UI', Arial, sans-serif; border-top: 1px solid #eee;">
+    <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 30px; color: #b3934d; margin-bottom: 30px; font-weight: 400;">
+        Travel Retail Stores
+    </h2>
+
+    <div style="font-size: 14px; color: #444; line-height: 1.8; margin-bottom: 40px;">
+        <p style="margin-bottom: 20px;">A special edition collection from the House of Anand, exclusively crafted as a travel retail brand for airports.</p>
+        <p style="margin-bottom: 20px;">Experience a curation of rich and indulgent Indian sweets and savories, created for the global Indian. To the guests travelling across, Our stores will unfold in the rich stories of Karnataka and India in its expansive collection of rich sweets and savouries.</p>
+        <p>Crafted with heritage recipes, luxurious ingredients and the inimitable quality of Anand - we present our exclusive travel retail stores, the hallmark of Karnataka's hospitality and heritage of indulgent experiences to the world.</p>
+    </div>
+
+    <div style="display: flex; justify-content: flex-start; gap: 100px; border-top: 1px solid #f0f0f0; padding-top: 30px;">
+        <div>
+            <span style="display: block; color: #999; font-size: 12px; margin-bottom: 8px;">Timing</span>
+            <span style="font-size: 14px; color: #333;">Monday to Saturday</span>
+        </div>
+        <div>
+            <span style="display: block; color: #999; font-size: 12px; margin-bottom: 8px;">Timing</span>
+            <span style="font-size: 14px; color: #333;">24 Hours all days</span>
+        </div>
+        <div>
+            <span style="display: block; color: #999; font-size: 12px; margin-bottom: 8px;">Email</span>
+            <a href="mailto:care@anandsweets.net" style="font-size: 14px; color: #b3934d; text-decoration: underline;">care@anandsweets.net</a>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+<script>
+    function updateBadge() {
+        const badge = document.getElementById('cart-count');
+        const count = localStorage.getItem('mainCartCount') || 0;
+        if(parseInt(count) > 0) {
+            badge.innerText = count;
+            badge.style.display = 'block';
+        }
+    }
+    window.onload = updateBadge; 
+
+    document.getElementById('submit-btn').addEventListener('click', function() {
+        const name = document.getElementById('c-name').value;
+        const email = document.getElementById('c-email').value;
+        const phone = document.getElementById('c-phone').value;
+        const msg = document.getElementById('c-msg').value;
+
+        if(name === "" || email === "" || phone === "" || msg === "") {
+            alert("❌ Please fill all fields!");
+        } else {
+            alert("✅ Form Submitted Successfully!\n\nThank you " + name + ", we will contact you soon.");
+            
+            document.getElementById('c-name').value = "";
+            document.getElementById('c-email').value = "";
+            document.getElementById('c-phone').value = "";
+            document.getElementById('c-msg').value = "";
+        }
+    });
+</script>
+
+
+
+
+
+
+
+
+
+    </body>
+    </html>
+

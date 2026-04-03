@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial;
+
+}
+
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    position: relative;
+}
+
+.menu a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+.menu1 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu1 li {
+    position: relative;
+}
+
+.menu1 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content1 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content1 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown1:hover .dropdown-content1 {
+    display: block;
+}
+
+
+.menu2 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu2 li {
+    position: relative;
+}
+
+.menu2 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content2 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content2 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown2:hover .dropdown-content2 {
+    display: block;
+}
+
+
+
+.menu3 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu3 li {
+    position: relative;
+}
+
+.menu3 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content3 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content3 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown3:hover .dropdown-content3 {
+    display: block;
+}
+
+
+
+.menu4 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu4 li {
+    position: relative;
+}
+
+.menu4 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content4 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content4 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown4:hover .dropdown-content4 {
+    display: block;
+}
+
+.menu5 {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu5 li {
+    position: relative;
+}
+
+.menu5 a {
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    color: black;
+}
+
+.dropdown-content5 {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.2);
+    width: 180px;
+}
+
+.dropdown-content5 li {
+    border-bottom: 1px solid #eee;
+}
+
+.dropdown5:hover .dropdown-content5 {
+    display: block;
+}
+
+
+.navone{
+    height: 40px;
+    width: vw;
+    background-color: rgb(186, 15, 15);
+    color: aliceblue;
+    padding-left: 300px;
+    padding-top: 10px;
+}
+.navtwo{
+    display: flex;
+    height: 60px;
+    width: vw;
+    background-color:white ;
+    justify-content: space-between;
+    
+
+}
+.logo1{
+    display: flex;
+    padding-top: 20px;
+    padding-right: 50px;
+    gap: 20px;
+    
+
+}
+.mitha{
+    padding-top: 15px;
+    font-weight:bold;
+    font-size: 30px;
+    color: rgb(224, 182, 123);
+    padding-left: 100px;
+}
+.content{
+    display: flex;
+    gap: 20px;
+    padding-top: 10px;
+}
+
+    </style>
+</head>
+<body>
+
+     <nav class="navone">Deliveries in Bangalore may take Upto 3days.For same day deliveries please order on swiggy or Zomato</nav>
+        <nav class="navtwo">
+            <div class="mitha">ANAND</div>
+        <div class="content">    
+ <ul class="menu">
+        <li class="dropdown">
+            <a href="#">Sweets ▾</a>
+
+            <ul class="dropdown-content">
+                <li><a href="burfi.html">Burfi</a></li>
+                <li><a href="laddu.html">Healthy Laddu</a></li>
+            </ul>
+        </li>
+        </ul>
+       
+         <ul class="menu1">
+<li class="dropdown1">
+            <a href="#">Namkeen ▾</a>
+
+            <ul class="dropdown-content1">
+                <li><a href="healthysnacks.html">Healthy Snacks</a></li>
+                <li><a href="southern.html">Southern Special</a></li>
+                
+            </ul>
+        </li>
+
+</ul>
+
+<ul class="menu2">
+        <li class="dropdown2">
+            <a href="#">Dry Fruits ▾</a>
+
+            <ul class="dropdown-content2">
+                <li><a href="dryfruits.html">All dry Fruits</a></li>
+                <li><a href="nuts.html">Flavoured Nuts</a></li>
+                
+            </ul>
+        </li></ul>
+
+     <ul class="menu3">   
+ <li class="dropdown3">
+            <a href="#">Gifting ▾</a>
+
+            <ul class="dropdown-content3">
+                <li><a href="assorted.html">Wedding Gifting</a></li>
+                <li><a href="sovenir.html">Corporate Gifting</a></li>
+            </ul>
+        </li>
+        </ul>
+
+
+        <ul class="menu4">
+<li class="dropdown4">
+            <a href="#">About Us ▾</a>
+
+            <ul class="dropdown-content4">
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="brand.html">Our Brand</a></li>
+                
+            </ul>
+        </li></ul>
+
+
+
+<ul class="menu5">
+ <li class="dropdown5">
+            <a href="#">Explore & content ▾</a>
+
+            <ul class="dropdown-content5">
+                <li><a href="blogs.html">Blogs</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                
+            </ul>
+        </li></ul>
+        </div>
+        
+        <div class="logo1">
+            <i class="fa-brands fa-sistrix"></i>
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+        </nav>
+
+<div style="max-width: 500px; margin: 60px auto; padding: 0 20px; text-align: center;">
+    
+    <h1 style="font-family: 'Times New Roman', Times, serif; font-size: 40px; color: #1a2b3c; margin-bottom: 10px; font-weight: 400;">Account</h1>
+    
+    <p style="font-size: 14px; color: #666; margin-bottom: 50px;">
+        <a href="index.html">Home</a> <span style="margin: 0 8px; color: #999;">&rsaquo;</span> Create Account
+    </p>
+
+    <form style="text-align: left;" id="register-form">
+        <h2 style="font-family: 'Times New Roman', Times, serif; font-size: 28px; font-weight: 400; margin-bottom: 25px;">Register</h2>
+
+        <input type="text" placeholder="First Name" required style="width: 100%; padding: 15px 0; border: none; border-bottom: 1px solid #e0e0e0; margin-bottom: 15px; font-size: 16px; outline: none; background: transparent;">
+        
+        <input type="text" placeholder="Last Name" required style="width: 100%; padding: 15px 0; border: none; border-bottom: 1px solid #e0e0e0; margin-bottom: 15px; font-size: 16px; outline: none; background: transparent;">
+        
+        <input type="email" placeholder="Email" required style="width: 100%; padding: 15px 0; border: none; border-bottom: 1px solid #e0e0e0; margin-bottom: 15px; font-size: 16px; outline: none; background: transparent;">
+        
+        <input type="password" placeholder="Password" required style="width: 100%; padding: 15px 0; border: none; border-bottom: 1px solid #e0e0e0; margin-bottom: 25px; font-size: 16px; outline: none; background: transparent;">
+
+        <p style="font-size: 14px; color: #666; line-height: 1.6; margin-bottom: 30px;">
+            Sign up for early Sale access plus tailored new arrivals.
+        </p>
+    
+        <button type="submit" style="width: 100%; background-color: #b3934d; color: white; border: none; padding: 15px; font-size: 16px; cursor: pointer; margin-bottom: 15px;">
+            Register
+        </button>
+
+        <a href="login.html" style="text-decoration: none;">
+          <a href="account.html"> <button type="button" style="width: 100%; background-color: transparent; color: #666; border: 1px solid #ccc; padding: 15px; font-size: 16px; cursor: pointer;">
+                Already have an account? Log In
+            </button></a>
+        </a>
+    </form>
+</div>
+
+
+
+ <script src="register.js"></script>
+</body>
+</html>
