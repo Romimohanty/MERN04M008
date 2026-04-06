@@ -70,6 +70,8 @@
 
 
     // 1. Browser ki memory se purana cart nikalna (agar pehle se kuch hai)
+
+    
     // Hum 'myCart' naam ki ek LIST (Array) bana rahe hain
     let cart = JSON.parse(localStorage.getItem('myCart')) || [];
     let totalCount = parseInt(localStorage.getItem('mainCartCount')) || 0;
