@@ -1,5 +1,5 @@
 import React from 'react'
-import { useParams } from 'react-router'
+import { Outlet, useParams } from 'react-router'
 
 function UserDetails() {
     const { Id } = useParams();
@@ -23,7 +23,6 @@ function UserDetails() {
             Name : {name}
             <br />
             Age : {age}
-
     </div>
   )
 }
