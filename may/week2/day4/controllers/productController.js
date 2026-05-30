@@ -30,12 +30,12 @@ const createProduct = async (req, res) => {
         const { name, price, description, isActive } = req.body;
 
         if (!name || !price || !description) {
-            return res.status(500).json({ message: "Please fill all required fields" });
+            return res.status(400).json({ message: "Please fill all required fields" });
         }
 
         const existProduct = await Product.findOne({ name });
         if (existProduct) {
-            return res.status(500).json({ message: "Product name already exists" });
+            return res.status(400).json({ message: "Product name already exists" });
         }
 
         const product = await Product.create({ name, price, description, isActive });
