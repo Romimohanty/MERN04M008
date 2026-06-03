@@ -5,7 +5,7 @@ const {
   updateVehicle,
   deleteVehicle,
   updateAvailablity,
-} = require("../controllers/vehicleController");
+} = require("../controllers/vehicleControllers");
 const { isAdmin, protect } = require("../middlewares/authMiddleware");
 
 const router = require("express").Router();
